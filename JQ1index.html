@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="veiwport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 <title>JQuery notes</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    /*Start of the Script*/  
+
+        $(".slide").slideUp(500).slideToggle(2000).css({color:"darkmagenta",fontWeight:"bolder"});    
+                    
+        
+           
+                    
+       
+      /*End of the Script*/  
+    });
+    
+    </script>
 </head>
 
 <body>
 <header>
-<h1>
-</h1>
+<h1>jQUERY</h1>
+<ul>
+    <lh>Getting started</lh>
+    <li>Download jquery file from <a href="http://jquery.com/">jquery.com</a> 
+    </ul>
+    
 </header>
+<hr>
+    <div href="">
+        <h3>Basic syntax</h3>
+        <ul>
+            
+            <lh><code><mark><strong>$(selector).action</strong></mark></code></lh>
+            <li>The<strong> ($)</strong> sign is to access jQuery</li>
+            <li>The (selector) refers to a html element,class or id</li>
+            <li>The <strong>action</strong> refers to a jQuery action.</li>
+      </ul>
+<hr>
+        <h3>Document Ready event</h3>
+        <p class="slide">before you start writing jQuery you should make a habbit of using this function : <code><strong>$(document).ready(function(){});</strong></code> 
+        and putting your code between it this basicaly uses the code once the page has loaded.
+        </p>
+<hr>
+    <h3>jQuery Selectors</h3>
+        <p>jquery selectors select,handle,find and select HTML elements by using there id,classes,attributes,types,values of the attributes and names examples below :.<br> 
+        </p>
+        
+        <ul>
+        <lh class="slide">Examples</lh>
+        <li>$('p') selects all paragraphs</li>
+        <li>$('#p1' selects all elements with the id p1)</li>
+        <li>$('.heads') selects all elements with the class of heads </li>
+            <li>All selectors in jQuery start with $ sign and are placed in ().</li>
+        <li><a href="">Click to see more examples.</a></li> 
+        </ul>
+<hr>
+    
+    
+    
+    
+    </div>
 </body>
 
 </html>
